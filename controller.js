@@ -8,7 +8,7 @@ exports.index = function (req, res) {
 };
 //controller list session
 exports.listSession = function (req, res) {
-    connection.query('SELECT name  FROM session', function (error, rows, fileds) {
+    connection.query('SELECT ID, name  FROM session', function (error, rows, fileds) {
         if (error) {
             console.log(error);
         } else {
